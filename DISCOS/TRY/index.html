@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand">DONITAS MUSIC</a>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/HTML/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/HTML/available.html">Available</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Recommended
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page">About US</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="" id="frmUsers">
+            <label class="label">Ingrese los discos de su preferencia</label> 
+            <div class="field is-grouped">
+                <div class="control has-icons-left">
+                <input class="input" name="nombre" type="text" placeholder="Nombre" autocomplete="off" >
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+                </div>
+                <div class="control has-icons-left">
+                    <input class="input" name="precio" type="text" placeholder="Precio" autocomplete="off" >
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                </span>
+                </div>
+                <div class="control has-icons-left">
+                    <input class="input" name="anio" type="text" placeholder="Año" autocomplete="off" >
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                </span>
+                </div>
+                <div class="control">
+                    <button id="agregar" type="button" class="button is-success">
+                        <span>Agregar</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <div id="divElements">
+
+        </div>
+    </div>
+
+    <script src="/menu.js"></script>
+</body>
+</html>
